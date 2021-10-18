@@ -57,3 +57,10 @@ I have also added the abilty to change the timer color by going into the action 
 
 If you allready have a timer active before changing the time than it won't change color but every task after changing the color will have this new color.
 
+## Screenshots
+
+<img width="177" alt="AddTask" src="img/AddTask.png">
+<img alt="AddTask" src="img/AddTask.png">
+
+
+
