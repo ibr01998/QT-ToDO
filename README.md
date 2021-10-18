@@ -58,14 +58,22 @@ I have also added the abilty to change the timer color by going into the action 
 If you allready have a timer active before changing the time than it won't change color but every task after changing the color will have this new color.
 
 ## Screenshots
+Add Task
+
+<img alt="AddTask" src="img/AddTask.png">
 
 Mainwindow
+
 <img alt="mainwindow" src="img/mainWindow.png">
-Add Task
-<img alt="AddTask" src="img/AddTask.png">
+
 Widget
+
 <img alt="widget" src="img/widget.png">
+
 Color Picker
+
 <img alt="colorpicker" src="img/color picker.png">
+
+
 
 
