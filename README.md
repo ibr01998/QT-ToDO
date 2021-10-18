@@ -57,6 +57,10 @@ I have also added the abilty to change the timer color by going into the action 
 
 If you allready have a timer active before changing the time than it won't change color but every task after changing the color will have this new color.
 
+# Conclusion
+
+The Idea is defently there and making it was a lot of fun but I think it sort of application are best made as a web app. I would have a lot more flexabily to really make something good. I think QT is great but has a lot more to offer for industrial based application than small helper tools. I'm very intressed to see how this testcase we come out in Ionic and Electron!
+
 ## Screenshots
 Add Task
 
