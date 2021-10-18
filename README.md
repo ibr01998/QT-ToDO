@@ -59,8 +59,13 @@ If you allready have a timer active before changing the time than it won't chang
 
 ## Screenshots
 
-<img width="177" alt="AddTask" src="img/AddTask.png">
+Mainwindow
+<img alt="mainwindow" src="img/mainWindow.png">
+Add Task
 <img alt="AddTask" src="img/AddTask.png">
-
+Widget
+<img alt="widget" src="img/widget.png">
+Color Picker
+<img alt="colorpicker" src="img/color picker.png">
 
 
