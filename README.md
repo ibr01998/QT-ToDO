@@ -114,9 +114,10 @@ To build every possible you can use the make commando:
 make
 ```
 This takes a very long time becouse it has to compile a lot of package, depending on your computer and internet speed it can take a very long time. It took me about 6 hours to fully compile.
-but after taking a second look I realized I could have just used the:
 
 <img alt="make" src="img/make.png">
+
+but after taking a second look I realized I could have just used the:
 
 ```
 make qt5
