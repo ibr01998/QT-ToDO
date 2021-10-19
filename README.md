@@ -33,7 +33,18 @@ so, we have a main window and an add task window be we don't have a task yet. we
 
 In this one let also start with the design lets add a checkbox for when the task is done, a label (for task name), a label for the timer witch we will build out with QPainter using primitive shapes. and let's add 3 more buttons and start btn to start the timer, a reset btn to reset the timer and a delete btn to delete the task. 
 
-so, we need a timer but can only use primitive shapes so how would one do this? we'll let take It one step at a time first I will be drawing My QPainter in a label so we will need a pixmap for that. after that's done let's add our first shape a circle, this will be the outercircle of the timer. to draw a circle with QPainter you'll need to use "painter.drawEllipse()" witch as the name suggests can draw Ellipse and circle just set the width and height to even number. on top of that let's draw a pie shape give it a different color. to make sure that the circle and pie are fully colored in use a QBrush instead of a QPen the QBrush automatically fills in the shape with its set color. to make a pie shape in QPainter you'll need: "painter.drawPie()" after that let add one more shape the inner circle let give it the same color as the pixmap witch in my case would be white. 
+so, we need a timer but can only use primitive shapes so how would one do this? we'll let take It one step at a time first I will be drawing My QPainter in a label so we will need a pixmap for that. after that's done let's add our first shape a circle, this will be the outercircle of the timer. to draw a circle with QPainter you'll need to use
+
+```
+painter.drawEllipse()
+```
+
+witch as the name suggests can draw Ellipse and circle just set the width and height to even number. on top of that let's draw a pie shape give it a different color. to make sure that the circle and pie are fully colored in use a QBrush instead of a QPen the QBrush automatically fills in the shape with its set color. to make a pie shape in QPainter you'll need: 
+
+```
+painter.drawPie()
+```
+after that let add one more shape the inner circle let give it the same color as the pixmap witch in my case would be white. 
 
 now you should be left with a round timer shaped object. but how do we make it functional well, let think about this for a second, we need to make the pie shape bigger over time corresponding to the time given by the user. and since there are 360 degrees in a full circle, we know how to calculate it. 
 
