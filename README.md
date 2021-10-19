@@ -55,6 +55,19 @@ If you already have a timer active before changing the time than it won't change
 
 The Idea is defiantly there and making it was a lot of fun, but I think it sort of application are best made as a web app. I would have a lot more flexibly to really make something good. I think QT is great but has a lot more to offer for industrial based application than small helper tools. I'm very interested to see how this testcase we come out in Ionic and Electron! 
 
+---
+
+# MXE
+
+Cross-building Qt5 on linux for windows.
+
+first we start by cloning the MXE repository
+
+```
+git clone https://github.com/mxe/mxe.git
+```
+
+
 ## Screenshots 
 
 Add Task
