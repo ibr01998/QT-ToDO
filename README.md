@@ -61,11 +61,105 @@ The Idea is defiantly there and making it was a lot of fun, but I think it sort 
 
 Cross-building Qt5 on linux for windows.
 
-first we start by cloning the MXE repository
+first we start by cloning the MXE repository:
 
 ```
 git clone https://github.com/mxe/mxe.git
 ```
+<img alt="clone" src="img/git clone.png">
+
+Its best to clone it right in your home directory.
+
+Just to make sure everything works correcty make sure you have the requirements installed
+
+```
+apt-get install \
+    autoconf \
+    automake \
+    autopoint \
+    bash \
+    bison \
+    bzip2 \
+    flex \
+    g++ \
+    g++-multilib \
+    gettext \
+    git \
+    gperf \
+    intltool \
+    libc6-dev-i386 \
+    libgdk-pixbuf2.0-dev \
+    libltdl-dev \
+    libssl-dev \
+    libtool-bin \
+    libxml-parser-perl \
+    lzip \
+    make \
+    openssl \
+    p7zip-full \
+    patch \
+    perl \
+    python \
+    ruby \
+    sed \
+    unzip \
+    wget \
+    xz-utils
+```
+let Build MXE
+
+To build every possible you can use the make commando:
+ 
+```
+make
+```
+This takes a very long time becouse it has to compile a lot of package, depending on your computer and internet speed it can take a very long time. It took me about 6 hours to fully compile.
+but after taking a second look I realized I could have just used the:
+
+<img alt="make" src="img/make.png">
+
+```
+make qt5
+```
+and save my self a lot of time.
+
+after that u can use the following command's to ensure the required tools are installed
+
+```
+sudo apt-get install \
+    software-properties-common \
+    lsb-release
+```
+
+after that you just add and refresh the MXE repository:
+
+```
+sudo apt-key adv \
+    --keyserver keyserver.ubuntu.com \
+    --recv-keys 86B72ED9 && \
+sudo add-apt-repository \
+    "deb [arch=amd64] https://pkg.mxe.cc/repos/apt `lsb_release -sc` main" && \
+sudo apt-get update
+```
+<img alt="refresh" src="img/refresh MXE repository.png">
+
+
+now it time to go into your app directory and set up your enviorment by exporting the right PATH
+
+```
+export PATH=<mxe root>/usr/bin/:$PATH
+```
+if that's done you can now run the qt makefile generator:
+
+```
+<mxe root>/usr/bin/i686-w64-mingw32.static-qmake-qt5
+```
+all you have to do know build your project:
+
+```
+make
+```
+<img alt="refresh" src="img/export path, compiler, make.png">
 
 
 ## Screenshots 
